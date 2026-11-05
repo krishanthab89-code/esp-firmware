@@ -1,0 +1,16 @@
+{
+  "name": "ESP Traffic Light System",
+  "version": "1.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "esp32/bootloader.bin", "offset": 4096 },
+        { "path": "esp32/partitions.bin", "offset": 32768 },
+        { "path": "esp32/boot_app0.bin", "offset": 57344 },
+        { "path": "esp32/firmware.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
